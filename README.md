@@ -2,6 +2,28 @@
 
 An end-to-end data-intensive application designed to monitor and track the real-time inventory of bicycles and docking spaces within the Citibike Bike Sharing stations across New York City.
 
+## Tools Used:
+
+### **Apache Spark**:
+Apache Spark is a unified analytics engine for big data processing, with built-in modules for streaming, SQL, machine learning, and graph processing. In this project, Spark's streaming capabilities are harnessed to process real-time bike and weather data efficiently.
+
+### **Delta Tables**:
+Delta Lake is an open-source storage layer that brings ACID transactions to Apache Spark and big data workloads. This project employs delta tables to manage the bronze, silver, and gold levels of data quality and refinement, ensuring reliability and performance.
+
+### **Databricks**:
+Databricks is a platform that provides a unified analytics platform and is a commercial version of Apache Spark. The model registry of Databricks is used to manage the different stages of machine learning models (staging and production) and ensure seamless deployment.
+
+### **MLflow**:
+MLflow is an open-source platform to manage the machine learning lifecycle, including experimentation, reproducibility, and deployment. In this project, MLflow manages experiments, model registration, hyperparameter tuning, and artifact storage, ensuring traceability and version control.
+
+### **DBFS (Databricks File System)**:
+DBFS is a distributed file system installed on Databricks clusters. The data of this project, given its volume and structure, is securely stored in DBFS, ensuring scalability and high availability.
+
+### **SQL**:
+Structured Query Language (SQL) is used for managing and querying large datasets efficiently. In the context of this project, SQL aids in exploratory data analysis, providing insights on trip trends, effects of holidays, and weather patterns on system usage.
+
+By utilizing this combination of cutting-edge tools and platforms, the project ensures robustness, scalability, and high performance in monitoring and forecasting bike availability in NYC's Citibike stations.
+
 ## Key Features and Processes:
 
 ### **ETL Pipeline:**
